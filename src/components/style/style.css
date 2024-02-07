@@ -1,5 +1,5 @@
 .header{
-  
+ 
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -8,6 +8,7 @@
     width:100%;
    background-color: aliceblue;
    height: 50px;
+   /* overflow: hidden; */
 }
 
 .nav-links ul{
@@ -49,13 +50,13 @@ border: 1px solid green;
     }
     .nav-links{
         background-color: rgb(0, 0, 0,0.8);
-        position: absolute;
-        width:100%;
+        position:fixed;
+        width:100%;     
         right: 0;
         top:50px;      
         transition: all 0.5s ease-in-out;
-        position: fixed;
-        height: 100vh;
+       
+        
     }
     .link{
         color:rgb(232, 232, 232);
@@ -97,8 +98,7 @@ border: 1px solid green;
 }
 .profile-image{
     width:250px;
-    height:250px;
-border-radius: 50%;
+    height:270px;
 
 
 }
