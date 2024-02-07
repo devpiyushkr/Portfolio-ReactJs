@@ -1,0 +1,104 @@
+.header{
+  
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width:100%;
+   background-color: aliceblue;
+   height: 50px;
+}
+
+.nav-links ul{
+    display: flex;
+}
+.nav-links ul li{
+    font-size: 17px;
+    color:black;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px 10px;
+    
+}
+
+/* .link:hover{
+    border-bottom: 2px solid red;
+} */
+
+
+.github-profile a{
+text-decoration: none;
+color:green;
+border-radius: 10px;
+padding: 2px 15px;
+border: 1px solid green;
+}
+
+.menu-icons{
+    display: none;
+}
+.link{
+    color:black;
+    text-decoration: none;
+}
+@media(max-width:750px){
+  
+    .nav-links ul{
+        display: block;
+    }
+    .nav-links{
+        background-color: rgb(0, 0, 0,0.8);
+        position: absolute;
+        width:100%;
+        right: 0;
+        top:50px;      
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+        height: 100vh;
+    }
+    .link{
+        color:rgb(232, 232, 232);
+        text-decoration: none;
+    }
+    .nav-links ul li{
+        margin-top: 50px;
+    }
+    .menu-icons{
+        font-size: 25px;
+        display: block;
+    }
+    .menu-icons .fa-bars{
+        transform: rotate(360deg);
+        transition: all 0.4s ease-in-out;
+    }
+    .menu-icons .fa-times{
+        transform: rotate(180deg);
+        transition: all 0.4s ease-in-out;
+    }
+    .nav-links.close{
+          right:-100%;
+        /* top:-100%; */
+        transition: all 0.5s ease-in-out;
+    }
+}
+/* ---------home-------- */
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.intro-container{
+    background-color: azure;   
+    margin-left: 40px;
+}
+ span{
+    color:green
+}
+.profile-image{
+    width:250px;
+    height:250px;
+border-radius: 50%;
+
+
+}
