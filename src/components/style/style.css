@@ -8,9 +8,10 @@
     width:100%;
    background-color: aliceblue;
    height: 50px;
-   /* overflow: hidden; */
 }
-
+.nav-links{
+    overflow: hidden;
+}
 .nav-links ul{
     display: flex;
 }
@@ -44,18 +45,18 @@ border: 1px solid green;
     text-decoration: none;
 }
 @media(max-width:750px){
-  
     .nav-links ul{
         display: block;
+      
     }
     .nav-links{
-        background-color: rgb(0, 0, 0,0.8);
         position:fixed;
         width:100%;     
         right: 0;
         top:50px;      
         transition: all 0.5s ease-in-out;
-       
+        background: scroll;
+        background-color: rgb(0, 0, 0,0.8);
         
     }
     .link{
@@ -64,6 +65,10 @@ border: 1px solid green;
     }
     .nav-links ul li{
         margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .nav-links ul li a{
+        color: white;
     }
     .menu-icons{
         font-size: 25px;
@@ -99,6 +104,42 @@ border: 1px solid green;
 .profile-image{
     width:250px;
     height:270px;
-
-
 }
+
+/* -----about----- */
+.about-section{
+    padding:40px;
+    margin-top:100px;
+    background-color: blue;
+    display: flex;
+    margin:80px;
+   
+}
+
+#about{
+    width:500px;
+    margin-left:80px;
+}
+
+@media(max-width:600px){
+   
+    .about-section{
+        display: block;
+        margin: 0;
+        background-color: red;
+        margin: 80px auto;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    #about{
+        text-align:left;
+       width: 80%;
+       margin-left: 30px;
+       margin-top: 30px;
+    }
+    .nav-links ul li a{
+        color: white;
+    }
+}
+
